@@ -11,15 +11,4 @@ Possible Cases:
 3. Role Doesn't Match: { message: 'Access Denied', status: "Error" }
 */
 
-function grantAccessTo(roles) {
-  return function (req, res, next) {
-    //Write your code here;
-    try{
-    } catch (err) {
-      return res.status(401).json({ message: 'Authentication failed: Invalid token.', status: "Error" });
-    }
-  }
-}
-
-module.exports = grantAccessTo;
 
